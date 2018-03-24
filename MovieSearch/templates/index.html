@@ -1,0 +1,363 @@
+﻿<!DOCTYPE html>
+<html lang="en-US">
+{% load staticfiles %}
+<head>
+    <meta charset="utf-8">
+    <meta name="baidu-site-verification" content="RuGuFalx9l" />
+    <meta name="baidu-site-verification" content="4YRgpZCO22" />
+
+    <meta name="viewport"
+          content="width=device-width, inital-scale=1.0, maximum-scale=1.0, height=device-height,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+
+
+    <meta name="description" content="Just Downlink">
+    <meta name="author" content="DONGFEI">
+    <meta name="keywords" content="Just Downlink">
+    <title>Just Downlink</title>
+
+    {#    <!-- Favicon Icon -->#}
+    {#    <link rel="shortcut icon" href="{% static 'img/favicon.ico' %}" type="image/x-icon">#}
+    {#    <!-- Bootstrap -->#}
+    {#    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">#}
+    {#    <!-- Plugins -->#}
+    {#    <link rel="stylesheet" href="{% static 'css/core.css' %}">#}
+    {#    <!-- Custom CSS -->#}
+    {#    <link rel="stylesheet" href="{% static 'css/style.css' %}">#}
+
+
+    <!-- Favicon Icon -->
+    <link rel="shortcut icon" href="http://dongfei.oss-cn-shanghai.aliyuncs.com/static/img/favicon.ico"
+          type="image/x-icon">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="http://dongfei.oss-cn-shanghai.aliyuncs.com/static/css/bootstrap.css">
+    <!-- Plugins -->
+    <link rel="stylesheet" href="{% static 'css/core.css' %}">
+    <link rel="stylesheet" href="http://dongfei.oss-cn-shanghai.aliyuncs.com/static/css/plugins/animsition.min.css">
+    <link rel="stylesheet" href="http://dongfei.oss-cn-shanghai.aliyuncs.com/static/css/plugins/flexslider.css">
+    <link rel="stylesheet" href="http://dongfei.oss-cn-shanghai.aliyuncs.com/static/css/plugins/swiper.min.css">
+    <link rel="stylesheet" href="http://dongfei.oss-cn-shanghai.aliyuncs.com/static/css/plugins/tooltipster.css">
+    <link rel="stylesheet" href="http://dongfei.oss-cn-shanghai.aliyuncs.com/static/css/plugins/animate.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="http://dongfei.oss-cn-shanghai.aliyuncs.com/static/css/style.css">
+
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?83f3606ac4a6e55ee8dab2cea4cc2ed0";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+    
+
+</head>
+
+<body id="top" class="stickyfooter header-fixed">
+
+<div class="animsition">
+    <div class="content">
+        <header class="header-wrap no-transparent">
+            <div class="header-container">
+                <div class="container clearfix">
+                    <div class="pull-left">
+                        <!-- Logo -->
+                        <a href="{% url 'index' %}" class="logo clearfix">DONGFEI</a>
+                    </div>
+                    <div class="pull-right">
+                        <!-- Menu Burger -->
+                        <a href="#" class="fullscreen-menu-toggle">
+                            <span>Menu</span>
+                            <i class="menu-bars">
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                            </i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            <!-- End header-container -->
+        </header>
+        <div id="fullscreen-navigation">
+            <div class="inner-wrap">
+                <nav>
+                    <ul class="nav_menu">
+                        <li><a href="{% url 'index' %}">Home</a></li>
+                        <li><a href="{% url 'about' %}">About ME</a></li>
+                        <li><a href="{% url 'contact' %}">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!-- End fullscreen-navigation -->
+        {#        <section class="jarallax" style="background-image: url({% static 'img/bg/08.png' %});">#}
+        <section class="jarallax"
+                 style="background-image: url('http://dongfei.oss-cn-shanghai.aliyuncs.com/static/img/bg/08.png');">
+
+
+            <div class="container">
+                <div class="aligner">
+                    <div class="aligner-item page-title">
+
+                        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=110
+                                src="//music.163.com/outchain/player?type=0&id=2133403770&auto=1&height=90"></iframe>
+
+                        <h1>Just&nbsp;&nbsp;Downlink</h1>
+                        <form class="form-wrapper cf">
+                            <input type="text" onkeydown="if(event.keyCode==13)return false;" class="searchInput"
+                                   placeholder="Search here ...">
+                            <button type="button" onclick="add_search()">Search</button>
+
+                            <div class="list-group dataList text-left mysearch">
+                                {#                                <a href="#" class="list-group-item text-left">Cras justo odio </a>#}
+                                {#                                <a href="#" class="list-group-item text-left">Dapibus ac facilisis in</a>#}
+                                {#                                <a href="#" class="list-group-item text-left">Morbi leo risus</a>#}
+                                {#                                <a href="#" class="list-group-item text-left">Porta ac consectetur ac</a>#}
+                                {#                                <a href="#" class="list-group-item text-left">Vestibulum at eros</a>#}
+                            </div>
+                        </form>
+
+                        <p>Creative Digital Agency</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End section -->
+        <main>
+            <!-- Count To -->
+            <section class="section mt blog-bg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="counter-item text-center">
+                                <div class="end-value">
+                                    <i>180</i>
+                                    <span>W+</span>
+                                </div>
+                                <h6>TOP SEARCH</h6>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="counter-item text-center">
+                                <div class="end-value">
+                                    <i>13</i>
+                                    <span>W+</span>
+                                </div>
+                                <h6>HOT MOVIES</h6>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="counter-item text-center">
+                                <div class="end-value">
+                                    <i>17</i>
+                                    <span>+</span>
+                                </div>
+                                <h6>WEBSITE PROJECTS </h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <a href="#top" class="scroll-top scroll-top-hidden">
+            <i class="fa fa-angle-up"></i>
+        </a>
+        <!-- End scroll-top -->
+
+
+    </div>
+    <!-- End content -->
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <div class="text-center">
+                    <!-- Footer Logo Text -->
+                    <a href="{% url 'contact' %}" class="logo clearfix">WORLD WITHOUT STRANGERS</a>
+                    <div class="footer-socials">
+                        <a href="https://www.facebook.com/profile.php?id=100012742063569" data-toggle="tooltip"
+                           data-placement="top" title="facebook">
+                            <i class="fa fa-fw fa-facebook"></i>
+                        </a>
+                        <a href="https://twitter.com/iamdongfei" data-toggle="tooltip" data-placement="top"
+                           title="twitter">
+                            <i class="fa fa-fw fa-twitter"></i>
+                        </a>
+                        <a href="https://plus.google.com/105235638425183033744" data-toggle="tooltip"
+                           data-placement="top" title="google plus">
+                            <i class="fa fa-fw fa-google-plus"></i>
+                        </a>
+                        <a href="http://blog.dongfei.xin/atom.xml" data-toggle="tooltip" data-placement="top"
+                           title="rss">
+                            <i class="fa fa-fw fa-rss"></i>
+                        </a>
+                    </div>
+                    <!-- End socials -->
+                    <!-- End footer-menu -->
+
+                    <p class="copy">
+                        Copyright &copy; 2018.Company name All rights reserved . <a target="_blank"
+                                                                                    href="http://blog.dongfei.xin/">Dongfei</a>
+
+                        <br><h6>备案号：苏ICP备17072109号</h6>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End footer -->
+</div>
+</body>
+
+
+<!-- End animsition -->
+{#<script type="text/javascript" src="{% static 'js/jquery-1.12.4.min.js' %}"></script>#}
+{#<script type="text/javascript" src="{% static 'js/libs.js' %}"></script>#}
+{#<script type="text/javascript" src="{% static 'js/main.js' %}"></script>#}
+{#<script type="text/javascript" src="{% static 'js/script.js' %}"></script>#}
+{#<script type="text/javascript" src="{% static 'js/search/jquery.js' %}"></script>#}
+{#<script type="text/javascript" src="{% static 'js/search/global.js' %}"></script>#}
+<!-- Custom -->
+
+<script type="text/javascript"
+        src="http://dongfei.oss-cn-shanghai.aliyuncs.com/static/js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="http://dongfei.oss-cn-shanghai.aliyuncs.com/static/js/libs.js"></script>
+<script type="text/javascript" src="http://dongfei.oss-cn-shanghai.aliyuncs.com/static/js/main.js"></script>
+<script type="text/javascript" src="http://dongfei.oss-cn-shanghai.aliyuncs.com/static/js/script.js"></script>
+<script type="text/javascript" src="http://dongfei.oss-cn-shanghai.aliyuncs.com/static/js/search/jquery.js"></script>
+<script type="text/javascript" src="http://dongfei.oss-cn-shanghai.aliyuncs.com/static/js/search/global.js"></script>
+
+
+<script type="text/javascript">
+    var search_url = "{% url 'search' %}"
+    var suggest_url = "{% url 'suggest' %}"
+
+    {#    $(".searchInput").keydown(function (e) {#}
+    {#        var val = $(".searchInput").val();#}
+    {#        window.location.href = search_url + '?q=' + val + "&s_type=dy2018"#}
+    {#    });#}
+
+    function removeByValue(arr, val) {
+        for (var i = 0; i < arr.length; i++) {
+            if (arr[i] == val) {
+                arr.splice(i, 1);
+                break;
+            }
+        }
+    }
+
+
+    // 搜索建议
+    $(function () {
+        $('.searchInput').bind(' input propertychange ', function () {
+            var searchText = $(this).val();
+            var tmpHtml = ""
+            $.ajax({
+                cache: false,
+                type: 'get',
+                dataType: 'json',
+                url: suggest_url + "?s=" + searchText + "&s_type=dy2018",
+                async: true,
+                success: function (data) {
+                    for (var i = 0; i < data.length; i++) {
+                        tmpHtml += '<a class="list-group-item text-left" href="' + search_url + '?q=' + data[i] + '">' + data[i] + '</a>'
+                    }
+                    $(".dataList").html("")
+                    $(".dataList").append(tmpHtml);
+                    if (data.length == 0) {
+                        $('.dataList').hide()
+                    } else {
+                        $('.dataList').show()
+                    }
+                }
+            });
+        });
+    })
+
+    hideElement($('.dataList'), $('.searchInput'));
+
+
+    var searchArr;
+    //定义一个search的，判断浏览器有无数据存储（搜索历史）
+    if (localStorage.search) {
+        //如果有，转换成 数组的形式存放到searchArr的数组里（localStorage以字符串的形式存储，所以要把它转换成数组的形式）
+        searchArr = localStorage.search.split(",")
+    } else {
+        //如果没有，则定义searchArr为一个空的数组
+        searchArr = [];
+    }
+    //把存储的数据显示出来作为搜索历史
+    MapSearchArr();
+
+    function add_search() {
+        var val = $(".searchInput").val();
+        if (val.length >= 2) {
+            //点击搜索按钮时，去重
+            KillRepeat(val);
+            //去重后把数组存储到浏览器localStorage
+            localStorage.search = searchArr;
+            //然后再把搜索内容显示出来
+            MapSearchArr();
+        }
+        window.location.href = search_url + '?q=' + val + "&s_type=dy2018"
+    }
+
+    function MapSearchArr() {
+        var tmpHtml = "";
+        var arrLen = 0
+        if (searchArr.length >= 5) {
+            arrLen = 5
+        } else {
+            arrLen = searchArr.length
+        }
+        for (var i = 0; i < arrLen; i++) {
+            tmpHtml += '<a class="list-group-item text-left" href="' + search_url + '?q=' + searchArr[i] + '">' + searchArr[i] + '</a>'
+        }
+        $(".mysearch").html(tmpHtml);
+    }
+
+
+    //去重
+    function KillRepeat(val) {
+        var kill = 0;
+        for (var i = 0; i < searchArr.length; i++) {
+            if (val === searchArr[i]) {
+                kill++;
+            }
+        }
+        if (kill < 1) {
+            searchArr.unshift(val);
+        } else {
+            removeByValue(searchArr, val)
+            searchArr.unshift(val)
+        }
+    }
+
+
+</script>
+
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+
+</html>

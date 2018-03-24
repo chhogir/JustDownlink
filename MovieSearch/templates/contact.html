@@ -1,0 +1,289 @@
+﻿<!DOCTYPE html>
+<html lang="en-US">
+{% load staticfiles %}
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Just Downlink">
+    <meta name="author" content="DONGFEI">
+    <meta name="keywords" content="Just Downlink">
+    <title>Just Downlink</title>
+    {#    <!-- Favicon Icon -->#}
+    {#    <link rel="shortcut icon" href="{% static 'img/favicon.ico' %}" type="image/x-icon">#}
+    {#    <!-- Bootstrap -->#}
+    {#    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">#}
+    {#    <!-- Plugins -->#}
+    {#    <link rel="stylesheet" href="{% static 'css/core.css' %}">#}
+    {#    <!-- Custom CSS -->#}
+    {#    <link rel="stylesheet" href="{% static 'css/style.css' %}">#}
+
+    <!-- Favicon Icon -->
+    <link rel="shortcut icon" href="http://dongfei.oss-cn-shanghai.aliyuncs.com/static/img/favicon.ico"
+          type="image/x-icon">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="http://dongfei.oss-cn-shanghai.aliyuncs.com/static/css/bootstrap.css">
+    <!-- Plugins -->
+    <link rel="stylesheet" href="{% static 'css/core.css' %}">
+    <link rel="stylesheet" href="http://dongfei.oss-cn-shanghai.aliyuncs.com/static/css/plugins/animsition.min.css">
+    <link rel="stylesheet" href="http://dongfei.oss-cn-shanghai.aliyuncs.com/static/css/plugins/flexslider.css">
+    <link rel="stylesheet" href="http://dongfei.oss-cn-shanghai.aliyuncs.com/static/css/plugins/swiper.min.css">
+    <link rel="stylesheet" href="http://dongfei.oss-cn-shanghai.aliyuncs.com/static/css/plugins/tooltipster.css">
+    <link rel="stylesheet" href="http://dongfei.oss-cn-shanghai.aliyuncs.com/static/css/plugins/animate.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="http://dongfei.oss-cn-shanghai.aliyuncs.com/static/css/style.css">
+
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?83f3606ac4a6e55ee8dab2cea4cc2ed0";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+    
+</head>
+<body id="top" class="stickyfooter header-fixed">
+<div class="animsition">
+    <div class="content">
+        <header class="header-wrap no-transparent">
+            <div class="header-container">
+                <div class="container clearfix">
+                    <div class="pull-left">
+                        <!-- Logo -->
+                        <a href="{% url 'index' %}" class="logo clearfix">DONGFEI</a>
+                    </div>
+                    <div class="pull-right">
+                        <!-- Menu Burger -->
+                        <a href="#" class="fullscreen-menu-toggle">
+                            <span>Menu</span>
+                            <i class="menu-bars">
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                            </i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- End header-container -->
+        </header>
+        <div id="fullscreen-navigation">
+            <div class="inner-wrap">
+                <nav>
+                    <ul class="nav_menu">
+                        <li><a href="{% url 'index' %}">Home</a></li>
+                        <li><a href="{% url 'about' %}">About ME</a></li>
+                        <li><a href="{% url 'contact' %}">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!-- End fullscreen-navigation -->
+        <section class="jarallax" style="background-image: url('http://dongfei.oss-cn-shanghai.aliyuncs.com/static/img/bg/06.png');">
+            <div class="container">
+                <div class="aligner">
+                    <div class="aligner-item page-title">
+
+                        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=110
+                                src="//music.163.com/outchain/player?type=0&id=2133403770&auto=1&height=90"></iframe>
+
+
+                        <h1>Connect with me</h1>
+                        <p>Let's keep in touch</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Section -->
+        <main>
+            <section class="section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-10 col-sm-offset-1">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h5 class="mb10">Contact info</h5>
+                                    <p>Join the conversation on Support Forum to find solutions, ask questions, and
+                                        share your ideas Minidark.</p>
+                                    <dl>
+                                        <dt><i class="fa fa-paper-plane-o" aria-hidden="true"></i> Say Hello</dt>
+                                        <dd>Email: iamdongfei@gmail.com</dd>
+                                        <dd>Phone: +1 886 087 34 53</dd>
+                                        <dd>Tel: +0 376 206 65 82</dd>
+                                        <dt class="mt10"><i class="fa fa-flag-o" aria-hidden="true"></i> Where to meet
+                                        </dt>
+                                        <dd>Jiangsu University,</dd>
+                                        <dd>Area C, No.301, Xuefu Road, Jingkou District,</dd>
+                                        <dd>Zhenjiang, Jiangsu, 212013</dd>
+                                    </dl>
+                                    <ul class="social-link">
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-fw fa-facebook"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-fw fa-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-fw fa-pinterest"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-instagram"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-vimeo"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <!-- End social-link -->
+
+                                </div>
+                                <!-- End col-md-6 -->
+                                <div class="col-md-6">
+                                    <div class="FAQShow"
+                                         style="display: none;text-align: center;font-family: Lobster,'Microsoft YaHei'; font-size: 38px;">
+                                        <br>Thank you
+                                        <br>I have got your message
+                                    </div>
+                                    <form class="contact-form formshow" id="contact-form" action="{% url 'contact' %}"
+                                          method="get" data-all-fields-required-msg="All fields are required"
+                                          data-ajax-fail-msg="Ajax could not set the request"
+                                          data-success-msg="Email successfully sent.">
+                                        <label>Name:<span>*</span></label>
+                                        <input class="contact-form-name" type="text" name="name">
+                                        <label>Email:<span>*</span></label>
+                                        <input class="contact-form-email" type="text" name="email">
+                                        <label>Message:<span>*</span></label>
+                                        <textarea cols="30" rows="2" class="contact-form-message"
+                                                  name="message"></textarea>
+                                        <p class="return-msg"></p>
+                                        <div class="mt40">
+                                            <button class="btn btn-md btn-black">
+												<span>Submit
+													<i class="fa fa-spin fa-spinner ajax-loader"
+                                                       style="display: none; margin-left: 5px;"></i>
+												</span>
+                                            </button>
+                                        </div>
+                                    </form>
+                                    <!-- End form -->
+                                </div>
+                                <!-- End col-md-6 -->
+                                <div class="col-md-12">
+                                    <div class="map mt40 sm-mt60" id="map" data-lat="-37.8213369" data-lng="144.9441664"
+                                         data-zoom="15" style="display: none;height: 350px;"></div>
+                                    <!-- End Map -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End section -->
+        </main>
+        <a href="#top" class="scroll-top scroll-top-hidden">
+            <i class="fa fa-angle-up"></i>
+        </a>
+        <!-- End scroll-top -->
+    </div>
+    <!-- End content -->
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <div class="text-center">
+                    <!-- Footer Logo Text -->
+                    <a href="#" class="logo clearfix">WORLD WITHOUT STRANGERS</a>
+                    <div class="footer-socials">
+                        <a href="https://www.facebook.com/profile.php?id=100012742063569" data-toggle="tooltip"
+                           data-placement="top" title="facebook">
+                            <i class="fa fa-fw fa-facebook"></i>
+                        </a>
+                        <a href="https://twitter.com/iamdongfei" data-toggle="tooltip" data-placement="top"
+                           title="twitter">
+                            <i class="fa fa-fw fa-twitter"></i>
+                        </a>
+                        <a href="https://plus.google.com/105235638425183033744" data-toggle="tooltip"
+                           data-placement="top" title="google plus">
+                            <i class="fa fa-fw fa-google-plus"></i>
+                        </a>
+                        <a href="http://blog.dongfei.xin/atom.xml" data-toggle="tooltip" data-placement="top"
+                           title="rss">
+                            <i class="fa fa-fw fa-rss"></i>
+                        </a>
+                    </div>
+                    <!-- End socials -->
+                    <!-- End footer-menu -->
+
+                    <p class="copy">
+                        Copyright &copy; 2018.Company name All rights reserved . <a target="_blank"
+                                                                                    href="http://blog.dongfei.xin/">Dongfei</a>
+                        <br><h6>备案号：苏ICP备17072109号</h6>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End footer -->
+</div>
+{#<!-- End animsition -->#}
+{#<script src="{% static 'js/jquery-1.12.4.min.js' %}"></script>#}
+{#<script src="{% static 'js/libs.js' %}"></script>#}
+{#<!-- Custom -->#}
+{#<script src="{% static 'js/main.js' %}"></script>#}
+{#<script src="{% static 'js/script.js' %}"></script>#}
+
+
+<script type="text/javascript" src="http://dongfei.oss-cn-shanghai.aliyuncs.com/static/js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="http://dongfei.oss-cn-shanghai.aliyuncs.com/static/js/libs.js"></script>
+<script type="text/javascript" src="http://dongfei.oss-cn-shanghai.aliyuncs.com/static/js/main.js"></script>
+<script type="text/javascript" src="http://dongfei.oss-cn-shanghai.aliyuncs.com/static/js/script.js"></script>
+
+
+<script type="text/javascript">
+    var str = window.location.href;
+    if (str.search("success") != -1) {
+        document.getElementsByClassName('FAQShow')[0].style.display = 'block'
+        document.getElementsByClassName('formshow')[0].style.display = 'none'
+    } else {
+        document.getElementsByClassName('FAQShow')[0].style.display = 'none'
+        document.getElementsByClassName('formshow')[0].style.display = 'block'
+    }
+
+
+</script>
+
+<!-- Google Map -->
+<!---<script src="http://maps.google.com/maps/api/js?key=AIzaSyCBEypW1XtGLWpikFPcityAok8rhJzzWRw"></script>--->
+<!-- Custom -->
+
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+</body>
+
+
+</html>

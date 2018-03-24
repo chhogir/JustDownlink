@@ -1,0 +1,476 @@
+﻿<!DOCTYPE html>
+<html lang="en-US">
+{% load staticfiles %}
+<head>
+    <meta charset="utf-8">
+
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?83f3606ac4a6e55ee8dab2cea4cc2ed0";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Just Downlink">
+    <meta name="author" content="DONGFEI">
+    <meta name="keywords" content="Just Downlink">
+    <title>Just Downlink</title>
+
+
+    {#    <!-- Favicon Icon -->#}
+    {#    <link rel="shortcut icon" href="{% static 'img/favicon.ico' %}" type="image/x-icon">#}
+    {#    <!-- Bootstrap -->#}
+    {#    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">#}
+    {#    <!-- Plugins -->#}
+    {#    <link rel="stylesheet" href="{% static 'css/core.css' %}">#}
+    {#    <!-- Custom CSS -->#}
+    {#    <link rel="stylesheet" href="{% static 'css/style.css' %}">#}
+
+
+    <!-- Favicon Icon -->
+    <link rel="shortcut icon" href="http://dongfei.oss-cn-shanghai.aliyuncs.com/static/img/favicon.ico"
+          type="image/x-icon">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="http://dongfei.oss-cn-shanghai.aliyuncs.com/static/css/bootstrap.css">
+    <!-- Plugins -->
+    <link rel="stylesheet" href="{% static 'css/core.css' %}">
+    <link rel="stylesheet" href="http://dongfei.oss-cn-shanghai.aliyuncs.com/static/css/plugins/animsition.min.css">
+    <link rel="stylesheet" href="http://dongfei.oss-cn-shanghai.aliyuncs.com/static/css/plugins/flexslider.css">
+    <link rel="stylesheet" href="http://dongfei.oss-cn-shanghai.aliyuncs.com/static/css/plugins/swiper.min.css">
+    <link rel="stylesheet" href="http://dongfei.oss-cn-shanghai.aliyuncs.com/static/css/plugins/tooltipster.css">
+    <link rel="stylesheet" href="http://dongfei.oss-cn-shanghai.aliyuncs.com/static/css/plugins/animate.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="http://dongfei.oss-cn-shanghai.aliyuncs.com/static/css/style.css">
+    
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?83f3606ac4a6e55ee8dab2cea4cc2ed0";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+    
+
+</head>
+
+<body id="top" class="stickyfooter header-fixed">
+<div class="animsition">
+    <div class="content">
+        <header class="header-wrap no-transparent">
+            <div class="header-container">
+                <div class="container clearfix">
+                    <div class="pull-left">
+                        <!-- Logo -->
+                        <a href="{% url 'index' %}" class="logo clearfix">DONGFEI</a>
+                    </div>
+                    <div class="pull-right">
+                        <!-- Menu Burger -->
+                        <a href="#" class="fullscreen-menu-toggle">
+                            <span>Menu</span>
+                            <i class="menu-bars">
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                            </i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            <!-- End header-container -->
+        </header>
+        <div id="fullscreen-navigation">
+            <div class="inner-wrap">
+                <nav>
+                    <ul class="nav_menu">
+                        <li><a href="{% url 'index' %}">Home</a></li>
+                        <li><a href="{% url 'about' %}">About ME</a></li>
+                        <li><a href="{% url 'contact' %}">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!-- End fullscreen-navigation -->
+        <section class="jarallax" style="background-image: url({% static 'img/bg/08.png' %});">
+            <div class="container">
+                <div class="aligner">
+                    <div class="aligner-item page-title">
+
+                        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=110
+                                src="//music.163.com/outchain/player?type=0&id=2133403770&auto=1&height=90"></iframe>
+
+                        <h1>Just&nbsp;&nbsp;&nbsp;&nbsp;Downlink</h1>
+                        <form class="form-wrapper cf">
+                            <input type="text" onkeydown="if(event.keyCode==13)return false;" class="searchInput"
+                                   value="{{ key_words }}"
+                                   placeholder="Search here ...">
+                            <button type="button" class="searchButton" onclick="add_search()">Search</button>
+
+                            <div class="list-group dataList text-left">
+                                {#                                <a href="#" class="list-group-item text-left">Cras justo odio </a>#}
+                                {#                                <a href="#" class="list-group-item text-left">Dapibus ac facilisis in</a>#}
+                                {#                                <a href="#" class="list-group-item text-left">Morbi leo risus</a>#}
+                                {#                                <a href="#" class="list-group-item text-left">Porta ac consectetur ac</a>#}
+                                {#                                <a href="#" class="list-group-item text-left">Vestibulum at eros</a>#}
+                            </div>
+                        </form>
+                        <p>Creative Digital Agency</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End section -->
+
+        <main>
+
+            <div class="section">
+                <div class="container">
+
+                    <!-- End filters-wrap -->
+                    <div class="portfolio-masonry-wrapper" data-col="3" data-gutter="30">
+                        <div class="portfolio-list">
+                            {% for hit in all_hits %}
+                                <article class="portfolio-item-wrap">
+                                    <div class="list-group">
+                                        <a style="background-color:#efefef;" href="{{ hit.url }}"
+                                           class="list-group-item list-group-item-info">
+                                            <h4 class="list-group-item-heading text-center">
+                                                {% autoescape off %}{{ hit.title }}{% endautoescape %}
+                                            </h4>
+                                        </a>
+
+                                        <h6 style="padding: 15px;background-color:#efefef;font-size:12px;text-indent: 24px; text-align: justify; word-break:break-all;"
+                                            class="list-group-item-text list-group-item-info text-left text-lowercase">
+                                            <br>片名：{% autoescape off %}{{ hit.title_detail }}{% endautoescape %}<br><br>
+                                            来源：{{ hit.source }}<br><br>
+                                            网站链接：<a style="color: #31708f;"
+                                                    href="{{ hit.url }}">{{ hit.url }}</a><br><br>
+                                            下载链接：<br><br>
+                                            {% autoescape off %}{{ hit.download_url }}{% endautoescape %}<br><br><br>
+                                            查询评分：{{ hit.score }}<br><br><br>
+                                            获取时间：{{ hit.crawl_time }}
+                                        </h6>
+                                    </div>
+                                </article>
+                            {% endfor %}
+
+
+                        </div>
+
+
+                        <div class="classic-load-button text-center">
+                            <p class="end" style="background-color:#DCDCDC;">Sorry <br> No More MOVIES</p>
+                            <span id="classic-load-button-link" class="pagination" data-load="1"></span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Count To -->
+            <section class="section mt blog-bg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="counter-item text-center">
+                                <div class="end-value">
+                                    <i>180</i>
+                                    <span>W+</span>
+                                </div>
+                                <h6>TOP SEARCH</h6>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="counter-item text-center">
+                                <div class="end-value">
+                                    <i>13</i>
+                                    <span>W+</span>
+                                </div>
+                                <h6>HOT MOVIES</h6>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="counter-item text-center">
+                                <div class="end-value">
+                                    <i>17</i>
+                                    <span>+</span>
+                                </div>
+                                <h6>WEBSITE PROJECTS </h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- End section -->
+
+        </main>
+        <a href="#top" class="scroll-top scroll-top-hidden">
+            <i class="fa fa-angle-up"></i>
+        </a>
+        <!-- End scroll-top -->
+    </div>
+    <!-- End content -->
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <div class="text-center">
+                    <!-- Footer Logo Text -->
+                    <a href="{% url 'contact' %}" class="logo clearfix">WORLD WITHOUT STRANGERS</a>
+                    <div class="footer-socials">
+                        <a href="https://www.facebook.com/profile.php?id=100012742063569" data-toggle="tooltip"
+                           data-placement="top" title="facebook">
+                            <i class="fa fa-fw fa-facebook"></i>
+                        </a>
+                        <a href="https://twitter.com/iamdongfei" data-toggle="tooltip" data-placement="top"
+                           title="twitter">
+                            <i class="fa fa-fw fa-twitter"></i>
+                        </a>
+                        <a href="https://plus.google.com/105235638425183033744" data-toggle="tooltip"
+                           data-placement="top" title="google plus">
+                            <i class="fa fa-fw fa-google-plus"></i>
+                        </a>
+                        <a href="http://blog.dongfei.xin/atom.xml" data-toggle="tooltip" data-placement="top"
+                           title="rss">
+                            <i class="fa fa-fw fa-rss"></i>
+                        </a>
+                    </div>
+                    <!-- End socials -->
+                    <!-- End footer-menu -->
+                    <p class="copy">
+                        Copyright &copy; 2018.Company name All rights reserved . <a target="_blank"
+                                                                                    href="http://www.smallseashell.com/">Dongfei</a>
+                        <br><h6>备案号：苏ICP备17072109号</h6>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End footer -->
+</div>
+
+</body>
+<!-- End animsition -->
+{#<script type="text/javascript" src="{% static 'js/jquery-1.12.4.min.js' %}"></script>#}
+{#<script type="text/javascript" src="{% static 'js/libs.js' %}"></script>#}
+{#<script type="text/javascript" src="{% static 'js/main.js' %}"></script>#}
+{#<script type="text/javascript" src="{% static 'js/script.js' %}"></script>#}
+{#<script type="text/javascript" src="{% static 'js/search/jquery.js' %}"></script>#}
+{#<script type="text/javascript" src="{% static 'js/search/global.js' %}"></script>#}
+{#<script type="text/javascript" src="{% static 'js/search/pagination.js' %}"></script>#}
+<!-- Custom -->
+
+
+<script type="text/javascript"
+        src="http://dongfei.oss-cn-shanghai.aliyuncs.com/static/js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="http://dongfei.oss-cn-shanghai.aliyuncs.com/static/js/libs.js"></script>
+<script type="text/javascript" src="http://dongfei.oss-cn-shanghai.aliyuncs.com/static/js/main.js"></script>
+<script type="text/javascript" src="http://dongfei.oss-cn-shanghai.aliyuncs.com/static/js/script.js"></script>
+<script type="text/javascript" src="http://dongfei.oss-cn-shanghai.aliyuncs.com/static/js/search/jquery.js"></script>
+<script type="text/javascript" src="http://dongfei.oss-cn-shanghai.aliyuncs.com/static/js/search/global.js"></script>
+<script type="text/javascript"
+        src="http://dongfei.oss-cn-shanghai.aliyuncs.com/static/js/search/pagination.js"></script>
+
+
+<script type="text/javascript">
+    var search_url = "{% url 'search' %}"
+
+    $('.searchList').on('click', '.searchItem', function () {
+        $('.searchList .searchItem').removeClass('current');
+        $(this).addClass('current');
+    });
+
+    $.each($('.subfieldContext'), function (i, item) {
+        $(this).find('li:gt(2)').hide().end().find('li:last').show();
+    });
+
+    function removeByValue(arr, val) {
+        for (var i = 0; i < arr.length; i++) {
+            if (arr[i] == val) {
+                arr.splice(i, 1);
+                break;
+            }
+        }
+    }
+    $('.subfieldContext .more').click(function (e) {
+        var $more = $(this).parent('.subfieldContext').find('.more');
+        if ($more.hasClass('show')) {
+
+            if ($(this).hasClass('define')) {
+                $(this).parent('.subfieldContext').find('.more').removeClass('show').find('.text').text('自定义');
+            } else {
+                $(this).parent('.subfieldContext').find('.more').removeClass('show').find('.text').text('更多');
+            }
+            $(this).parent('.subfieldContext').find('li:gt(2)').hide().end().find('li:last').show();
+        } else {
+            $(this).parent('.subfieldContext').find('.more').addClass('show').find('.text').text('收起');
+            $(this).parent('.subfieldContext').find('li:gt(2)').show();
+        }
+
+    });
+
+    $('.sideBarShowHide a').click(function (e) {
+        if ($('#main').hasClass('sideBarHide')) {
+            $('#main').removeClass('sideBarHide');
+            $('#container').removeClass('sideBarHide');
+        } else {
+            $('#main').addClass('sideBarHide');
+            $('#container').addClass('sideBarHide');
+        }
+
+    });
+
+    var key_words = "{{ key_words }}"
+
+    //分页
+    $(".pagination").pagination({{ total_nums }}, {
+        current_page:{{ page|add:'-1' }}, //当前页码
+        items_per_page: 10,
+        display_msg: true,
+        {#        callback: pageselectCallback#}
+    })
+
+    function pageselectCallback(page_id, jq) {
+        window.location.href = search_url + '?q=' + key_words + '&p=' + page_id
+    }
+
+    var page_id = parseInt($("strong.current").text())
+    var total_page = parseInt($(".total_page").text())
+    var total_nums = parseInt({{ total_nums }})
+
+    function getPrevPage() {
+        if (page_id <= 1) {
+            window.location.href = search_url + '?q=' + key_words + '&p=' + page_id
+        } else {
+            window.location.href = search_url + '?q=' + key_words + '&p=' + (page_id - 1)
+        }
+    }
+
+    function getNextPage() {
+        if (page_id >= total_page) {
+            window.location.href = search_url + '?q=' + key_words + '&p=' + page_id
+        } else {
+            window.location.href = search_url + '?q=' + key_words + '&p=' + (page_id + 1)
+        }
+    }
+
+    if (page_id >= total_page || total_nums <= 10) {
+        $(".end").show();
+        $("#classic-load-button-link").remove()
+    }
+
+
+    setHeight();
+    $(window).resize(function () {
+        setHeight();
+    });
+
+    function setHeight() {
+        if ($('#container').outerHeight() < $(window).height()) {
+            $('#container').height($(window).height() - 33);
+        }
+    }
+</script>
+<script type="text/javascript">
+    $('.searchList').on('click', '.searchItem', function () {
+        $('.searchList .searchItem').removeClass('current');
+        $(this).addClass('current');
+    });
+
+    // 联想下拉显示隐藏
+    $('.searchInput').on('focus', function () {
+        $('.dataList').show()
+    });
+
+    // 联想下拉点击
+    $('.dataList').on('click', 'a', function () {
+        var text = $(this).text();
+        $('.searchInput').val(text);
+        $('.dataList').hide()
+    });
+
+    hideElement($('.dataList'), $('.searchInput'));
+</script>
+<script>
+    var searchArr;
+    //定义一个search的，判断浏览器有无数据存储（搜索历史）
+    if (localStorage.search) {
+        //如果有，转换成 数组的形式存放到searchArr的数组里（localStorage以字符串的形式存储，所以要把它转换成数组的形式）
+        searchArr = localStorage.search.split(",")
+    } else {
+        //如果没有，则定义searchArr为一个空的数组
+        searchArr = [];
+    }
+    //把存储的数据显示出来作为搜索历史
+    MapSearchArr();
+
+    function add_search() {
+        var val = $(".searchInput").val();
+        if (val.length >= 2) {
+            //点击搜索按钮时，去重
+            KillRepeat(val);
+            //去重后把数组存储到浏览器localStorage
+            localStorage.search = searchArr;
+            //然后再把搜索内容显示出来
+            MapSearchArr();
+        }
+
+        window.location.href = search_url + '?q=' + val + "&s_type=" + $(".searchItem.current").attr('data-type')
+
+    }
+
+    function MapSearchArr() {
+        var tmpHtml = "";
+        var arrLen = 0
+        if (searchArr.length > 6) {
+            arrLen = 6
+        } else {
+            arrLen = searchArr.length
+        }
+        for (var i = 0; i < arrLen; i++) {
+            tmpHtml += '<li><a href="/search?q=' + searchArr[i] + '">' + searchArr[i] + '</a></li>'
+        }
+        $(".mySearch .historyList").append(tmpHtml);
+    }
+    //去重
+    function KillRepeat(val) {
+        var kill = 0;
+        for (var i = 0; i < searchArr.length; i++) {
+            if (val === searchArr[i]) {
+                kill++;
+            }
+        }
+        if (kill < 1) {
+            searchArr.unshift(val);
+        } else {
+            removeByValue(searchArr, val)
+            searchArr.unshift(val)
+        }
+    }
+</script>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+</html>

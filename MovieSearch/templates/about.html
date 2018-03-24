@@ -1,0 +1,427 @@
+﻿<!DOCTYPE html>
+<html lang="en-US">
+{% load staticfiles %}
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Just Downlink">
+    <meta name="author" content="DONGFEI">
+    <meta name="keywords" content="Just Downlink">
+    <title>Just Downlink</title>
+
+
+    {#    <!-- Favicon Icon -->#}
+    {#    <link rel="shortcut icon" href="{% static 'img/favicon.ico' %}" type="image/x-icon">#}
+    {#    <!-- Bootstrap -->#}
+    {#    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">#}
+    {#    <!-- Plugins -->#}
+    {#    <link rel="stylesheet" href="{% static 'css/core.css' %}">#}
+    {#    <!-- Custom CSS -->#}
+    {#    <link rel="stylesheet" href="{% static 'css/style.css' %}">#}
+
+
+    <!-- Favicon Icon -->
+    <link rel="shortcut icon" href="http://dongfei.oss-cn-shanghai.aliyuncs.com/static/img/favicon.ico"
+          type="image/x-icon">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="http://dongfei.oss-cn-shanghai.aliyuncs.com/static/css/bootstrap.css">
+    <!-- Plugins -->
+    <link rel="stylesheet" href="{% static 'css/core.css' %}">
+    <link rel="stylesheet" href="http://dongfei.oss-cn-shanghai.aliyuncs.com/static/css/plugins/animsition.min.css">
+    <link rel="stylesheet" href="http://dongfei.oss-cn-shanghai.aliyuncs.com/static/css/plugins/flexslider.css">
+    <link rel="stylesheet" href="http://dongfei.oss-cn-shanghai.aliyuncs.com/static/css/plugins/swiper.min.css">
+    <link rel="stylesheet" href="http://dongfei.oss-cn-shanghai.aliyuncs.com/static/css/plugins/tooltipster.css">
+    <link rel="stylesheet" href="http://dongfei.oss-cn-shanghai.aliyuncs.com/static/css/plugins/animate.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="http://dongfei.oss-cn-shanghai.aliyuncs.com/static/css/style.css">
+
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?83f3606ac4a6e55ee8dab2cea4cc2ed0";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+    
+
+
+</head>
+
+<body id="top" class="stickyfooter header-fixed">
+<div class="animsition">
+    <div class="content">
+        <header class="header-wrap no-transparent">
+            <div class="header-container">
+                <div class="container clearfix">
+                    <div class="pull-left">
+                        <!-- Logo -->
+                        <a href="{% url 'index' %}" class="logo clearfix">DONGFEI</a>
+                    </div>
+                    <div class="pull-right">
+                        <!-- Menu Burger -->
+                        <a href="#" class="fullscreen-menu-toggle">
+                            <span>Menu</span>
+                            <i class="menu-bars">
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                            </i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            <!-- End header-container -->
+        </header>
+        <div id="fullscreen-navigation">
+            <div class="inner-wrap">
+                <nav>
+                    <ul class="nav_menu">
+                        <li><a href="{% url 'index' %}">Home</a></li>
+                        <li><a href="{% url 'about' %}">About ME</a></li>
+                        <li><a href="{% url 'contact' %}">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!-- End fullscreen-navigation -->
+        <section class="jarallax" style="background-image: url('http://dongfei.oss-cn-shanghai.aliyuncs.com/static/img/bg/05.png');">
+            <div class="container">
+                <div class="aligner">
+                    <div class="aligner-item page-title">
+
+                        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=110
+                                src="//music.163.com/outchain/player?type=0&id=2133403770&auto=1&height=90"></iframe>
+
+
+                        <h1>I Am DONGFEI</h1>
+                        <p>Creative Digital Agency</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End section -->
+        <main>
+            <!-- Service Item -->
+            <section class="pt-50">
+                <div class="container">
+                    <!-- <div class="mb30">
+                        <h5>Service Item</h5>
+                    </div> -->
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="service-box">
+                                <div class="icon-holder">
+                                    <i class="pe-light"></i>
+                                </div>
+                                <div class="content-holder">
+                                    <h5>idea</h5>
+                                    <span>Praesent faucibus nisl sit amet nulla sollicitudin pretium a sed purus.&nbsp;</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="service-box">
+                                <div class="icon-holder">
+                                    <i class="pe-help2"></i>
+                                </div>
+                                <div class="content-holder">
+                                    <h5>Support</h5>
+                                    <span>Praesent faucibus nisl sit amet nulla sollicitudin pretium a sed purus.&nbsp;</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="service-box">
+                                <div class="icon-holder">
+                                    <i class="pe-graph2"></i>
+                                </div>
+                                <div class="content-holder">
+                                    <h5>Seo Optimization</h5>
+                                    <span>Praesent faucibus nisl sit amet nulla sollicitudin pretium a sed purus.&nbsp;</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="row">
+                                <div class="col-md-6 col-sm-12 col-xs-12">
+                                    <!-- Image Slider -->
+                                    <div class="image-slider-wrap" data-visible-dots="true" data-visible-nav="true">
+                                        <div class="image-slider">
+                                            <div class="flexslider">
+                                                <!-- Blind -->
+                                                <div class="blind-01"></div>
+                                                <div class="blind-02"></div>
+                                                <!-- Slides -->
+                                                <ul>
+                                                    <li>
+                                                        <img src="http://dongfei.oss-cn-shanghai.aliyuncs.com/static/img/bg/03.png" alt="">
+                                                    </li>
+                                                    <li>
+                                                        <img src="http://dongfei.oss-cn-shanghai.aliyuncs.com/static/img/bg/04.png" alt="">
+                                                    </li>
+                                                </ul>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End Image Slider -->
+                                </div>
+                                <div class="col-md-6 col-sm-12 col-xs-12">
+                                    <p class="text-justify">Saepe nulla, id sint consectet vitae pariatur iure eum,
+                                        omnis, expedita aspernatur minima distinctio minus nesciunt! Cupiditate quidem
+                                        accusantium ab non. Animi pariatur esse reprehenderit laudantium nam sapiente,
+                                        praesentium similique.</p>
+                                    <div class="progress-bar">
+                                        <h6>Web INTERIORS</h6>
+                                        <div class="progress-outer">
+                                            <div class="progress-inner">
+                                                <span>95</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <h6>Desginer</h6>
+                                        <div class="progress-outer">
+                                            <div class="progress-inner">
+                                                <span>80</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <h6>Wordpress</h6>
+                                        <div class="progress-outer">
+                                            <div class="progress-inner">
+                                                <span>70</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <h6>Our Achievements</h6>
+                                        <div class="progress-outer">
+                                            <div class="progress-inner">
+                                                <span>50</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Team Members -->
+            <div class="team-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="team-item">
+                                <img src="http://dongfei.oss-cn-shanghai.aliyuncs.com/static/img/team/team1.png" alt="">
+                                <div class="team-content">
+                                    <div class="team-name">
+                                        Mark John De
+                                    </div>
+                                    <div class="team-function">
+                                        Developer
+                                    </div>
+                                    <div class="team-social">
+                                        <a href="#" data-toggle="tooltip" data-placement="top">
+                                            <i class="fa fa-fw fa-facebook"></i>
+                                        </a>
+                                        <a href="#" data-toggle="tooltip" data-placement="top">
+                                            <i class="fa fa-fw fa-twitter"></i>
+                                        </a>
+                                        <a href="#" data-toggle="tooltip" data-placement="top">
+                                            <i class="fa fa-fw fa-google-plus"></i>
+                                        </a>
+                                        <a href="#" data-toggle="tooltip" data-placement="top">
+                                            <i class="fa fa-fw fa-rss"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END TEAM-ITEM -->
+                        </div>
+                        <div class="col-md-4">
+                            <div class="team-item">
+                                <img src="http://dongfei.oss-cn-shanghai.aliyuncs.com/static/img/team/team2.png" alt="">
+                                <div class="team-content">
+                                    <div class="team-name">
+                                        Robert Albert
+                                    </div>
+                                    <div class="team-function">
+                                        Photographer
+                                    </div>
+                                    <div class="team-social">
+                                        <a href="#" data-toggle="tooltip" data-placement="top">
+                                            <i class="fa fa-fw fa-facebook"></i>
+                                        </a>
+                                        <a href="#" data-toggle="tooltip" data-placement="top">
+                                            <i class="fa fa-fw fa-twitter"></i>
+                                        </a>
+                                        <a href="#" data-toggle="tooltip" data-placement="top">
+                                            <i class="fa fa-fw fa-google-plus"></i>
+                                        </a>
+                                        <a href="#" data-toggle="tooltip" data-placement="top">
+                                            <i class="fa fa-fw fa-rss"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END TEAM-ITEM -->
+                        </div>
+                        <div class="col-md-4">
+                            <div class="team-item">
+                                <img src="http://dongfei.oss-cn-shanghai.aliyuncs.com/static/img/team/team3.png" alt="">
+                                <div class="team-content">
+                                    <div class="team-name">
+                                        Prince Leo
+                                    </div>
+                                    <div class="team-function">
+                                        INTERIOR
+                                    </div>
+                                    <div class="team-social">
+                                        <a href="#" data-toggle="tooltip" data-placement="top">
+                                            <i class="fa fa-fw fa-facebook"></i>
+                                        </a>
+                                        <a href="#" data-toggle="tooltip" data-placement="top">
+                                            <i class="fa fa-fw fa-twitter"></i>
+                                        </a>
+                                        <a href="#" data-toggle="tooltip" data-placement="top">
+                                            <i class="fa fa-fw fa-google-plus"></i>
+                                        </a>
+                                        <a href="#" data-toggle="tooltip" data-placement="top">
+                                            <i class="fa fa-fw fa-rss"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END TEAM-ITEM -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End section -->
+            <div class="client-area pt-80 pb40">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-3 col-xs-6 sm-mb-30">
+                            <div class="logo-wrap" data-toggle="tooltip" data-placement="top" title="Minimal">
+                                <a href="#" class="clearfix"><img src="http://dongfei.oss-cn-shanghai.aliyuncs.com/static/img/client/logo1.png"
+                                                                  alt="Minimal"></a>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 col-xs-6 sm-mb-30">
+                            <div class="logo-wrap" data-toggle="tooltip" data-placement="top" title="Minimalist">
+                                <a href="#" class="clearfix"><img
+                                        src="http://dongfei.oss-cn-shanghai.aliyuncs.com/static/img/client/logo2.png" alt="Minimalist"></a>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 col-xs-6">
+                            <div class="logo-wrap" data-toggle="tooltip" data-placement="top" title="Creative">
+                                <a href="#" class="clearfix"><img
+                                        src="http://dongfei.oss-cn-shanghai.aliyuncs.com/static/img/client/logo3.png" alt="Creative"></a>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 col-xs-6">
+                            <div class="logo-wrap" data-toggle="tooltip" data-placement="top" title="Legend">
+                                <a href="#" class="clearfix"><img src="http://dongfei.oss-cn-shanghai.aliyuncs.com/static/img/client/logo4.png"
+                                                                  alt="Red Cups"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End section -->
+        </main>
+        <a href="#top" class="scroll-top scroll-top-hidden">
+            <i class="fa fa-angle-up"></i>
+        </a>
+        <!-- End scroll-top -->
+    </div>
+    <!-- End content -->
+    <footer>
+        <div class="footer">
+            <div class="footer">
+                <div class="container">
+                    <div class="text-center">
+                        <!-- Footer Logo Text -->
+                        <a href="{% url 'contact' %}" class="logo clearfix">WORLD WITHOUT STRANGERS</a>
+                        <div class="footer-socials">
+                            <a href="https://www.facebook.com/profile.php?id=100012742063569" data-toggle="tooltip"
+                               data-placement="top" title="facebook">
+                                <i class="fa fa-fw fa-facebook"></i>
+                            </a>
+                            <a href="https://twitter.com/iamdongfei" data-toggle="tooltip" data-placement="top"
+                               title="twitter">
+                                <i class="fa fa-fw fa-twitter"></i>
+                            </a>
+                            <a href="https://plus.google.com/105235638425183033744" data-toggle="tooltip"
+                               data-placement="top"
+                               title="google plus">
+                                <i class="fa fa-fw fa-google-plus"></i>
+                            </a>
+                            <a href="http://blog.dongfei.xin/atom.xml" data-toggle="tooltip" data-placement="top"
+                               title="rss">
+                                <i class="fa fa-fw fa-rss"></i>
+                            </a>
+                        </div>
+                        <!-- End socials -->
+                        <!-- End footer-menu -->
+
+                        <p class="copy">
+                            Copyright &copy; 2018.Company name All rights reserved . <a target="_blank"
+                                                                                        href="http://blog.dongfei.xin/">Dongfei</a>
+                            <br><h6>备案号：苏ICP备17072109号</h6>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End footer -->
+</div>
+
+{#<!-- End animsition -->#}
+{#<script src="{% static 'js/jquery-1.12.4.min.js' %}"></script>#}
+{#<script src="{% static 'js/libs.js' %}"></script>#}
+{#<!-- Custom -->#}
+{#<script src="{% static 'js/main.js' %}"></script>#}
+{#<script src="{% static 'js/script.js' %}"></script>#}
+
+
+
+
+<script type="text/javascript" src="http://dongfei.oss-cn-shanghai.aliyuncs.com/static/js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="http://dongfei.oss-cn-shanghai.aliyuncs.com/static/js/libs.js"></script>
+<script type="text/javascript" src="http://dongfei.oss-cn-shanghai.aliyuncs.com/static/js/main.js"></script>
+<script type="text/javascript" src="http://dongfei.oss-cn-shanghai.aliyuncs.com/static/js/script.js"></script>
+
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+</body>
+</html>

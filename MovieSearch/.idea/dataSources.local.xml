@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="MySQL - @localhost" uuid="96e3ec6a-e021-4174-ae71-992e16c98ac4">
+      <secret-storage>master_key</secret-storage>
+      <user-name>root</user-name>
+      <schema-pattern>faq.*</schema-pattern>
+      <default-schemas>faq.*</default-schemas>
+    </data-source>
+    <data-source name="Sqlite (Xerial) - identifier.sqlite" uuid="096ce0c2-6ca0-4d2b-b850-f472fec9c49e">
+      <secret-storage>master_key</secret-storage>
+      <auth-required>false</auth-required>
+    </data-source>
+    <data-source name="Sqlite (Xerial) - db.sqlite3" uuid="9c273e75-3651-4e0f-b745-f02974453b84">
+      <secret-storage>master_key</secret-storage>
+      <auth-required>false</auth-required>
+    </data-source>
+  </component>
+</project>
