@@ -1,4 +1,4 @@
-# [Just Downlink](http://www.dongfei.xyz)
+# [Just Downlink](http://movie.dongfei.xin)
 
 基于 scrapy + elasticsearch + django 搭建的分布式电影搜索
 
